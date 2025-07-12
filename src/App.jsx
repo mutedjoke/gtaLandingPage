@@ -57,17 +57,15 @@ function App() {
       ease: "Expo.easeInOut",
     });
 
-   gsap.to(".character", {
-  scale: 1.4,
-  xPercent: -50,
-  bottom: "-25%",
-  rotate: 0,
-  duration: 2,
-  delay: "-0.8",
-  ease: "expo.inOut",
-});
-
-
+    gsap.to(".character", {
+      scale: 1.4,
+      x: "-50%",
+      bottom: "-25%",
+      rotate: 0,
+      duration: 2,
+      delay: "-.8",
+      ease: "Expo.easeInOut",
+    });
 
     gsap.to(".text", {
       scale: 1,
@@ -156,16 +154,11 @@ function App() {
                 <h1 className="text-[12rem] leading-none ml-20">theft</h1>
                 <h1 className="text-[12rem] leading-none -ml-40">auto</h1>
               </div>
-                  <img
-  className="character"
-  src="/girlbg.png"
-  alt=""
-/>
-
-
-
-
-
+              <img
+                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
+                src="./girlbg.png"
+                alt=""
+              />
             </div>
             <div className="btmbar text-white absolute bottom-0 left-0 w-full py-15 px-10 bg-gradient-to-t from-black to-transparent">
               <div className="flex gap-4 items-center">

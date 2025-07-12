@@ -11,11 +11,3 @@ body {
   height: 100%;
   font-family: "pricedown";
 }
-
-.character {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scale(2.5) rotate(-20deg);
-  bottom: -130%;
-  z-index: 10;
-}
